@@ -5,6 +5,6 @@ var controller = require('./restfulapi');
 var router = express.Router();
 var models = require('../../../models');
 
-router.get('/listUsers', controller.listUsers);
-router.get('/listUserPost/:id', controller.listUserPost);
-router.put('/update/user/:id', controller.updateUser);
+router.get('/api/restfulapis/listUsers', controller.listUsers);
+router.get('/api/restfulapis/listUserPost/:id', controller.listUserPost);
+router.put('/api/restfulapis/update/user/:id', controller.updateUser);
